@@ -1101,6 +1101,31 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
