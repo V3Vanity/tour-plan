@@ -1155,8 +1155,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
@@ -1253,6 +1254,7 @@ template {
 }
 
 .footer__message {
+  height: 123px;
   background-color: #fff;
   border-radius: 4 px;
   padding: 18px 23px;
@@ -1260,6 +1262,7 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+  resize: none;
 }
 
 .footer__button {
@@ -1281,7 +1284,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
@@ -1534,7 +1537,7 @@ template {
     width: 49%;
     height: 255px;
   }
-  .card .footer__input {
+  .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1563,6 +1566,7 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding-bottom: 60px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1605,6 +1609,19 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__form {
+    position: relative;
+  }
+  .footer__button {
+    position: absolute;
+    top: 110%;
+    left: 0;
+  }
+  .footer__info {
+    position: absolute;
+    top: 98%;
+    left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
