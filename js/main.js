@@ -58,4 +58,39 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      messages: {
+        name: {
+          required: "Пожалуйста, укажите своё имя",
+          minlength: "Имя должно быть не короче 2 букв",
+        },
+        email: {
+          required: "Email адрес обязателен",
+          email:
+            "Ваш email адрес должен быть написан в формате name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен",
+        },
+      },
+    });
+  });
+  $(".subscribe").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Пожалуйста, укажите своё имя",
+        minlength: "Имя должно быть не короче 2 букв",
+      },
+      email: {
+        required: "Email адрес обязателен",
+        email: "Ваш email адрес должен быть написан в формате name@domain.com",
+      },
+      phone: {
+        required: "Телефон обязателен",
+      },
+    },
+  });
 });
