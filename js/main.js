@@ -99,4 +99,5 @@ $(document).ready(function () {
   $(document).ready(function () {
     $("#phone-2").mask("+7 (999) 999-99-99");
   });
+  AOS.init();
 });
