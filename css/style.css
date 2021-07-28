@@ -53,6 +53,10 @@ img {
   position: absolute;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1264,6 +1268,14 @@ template {
 
 .footer__item--mb-2 {
   margin-bottom: 20px;
+}
+
+.footer__item-href {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
 }
 
 .footer__icon-wrapper {

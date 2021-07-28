@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -278,7 +279,11 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsleter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsleter__subscribe"
+        >
           <input
             type="email"
             class="subscribe__input"
@@ -286,7 +291,7 @@
             name="email"
             required
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
     </section>
@@ -607,10 +612,21 @@
                     alt="icon: phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 Tel (hotline) Monday -
-                Saturday:<br />
-                52-56-61-38 (08:00 am – 20:00 pm) Tel (hotline) Sunday:<br />
-                52-56-61-38 (08:00 am – 14:00 pm)
+                <div>
+                  Tel (business hours) :
+                  <a href="269-1500" class="footer__item-href">269 1500</a>
+                  <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="52-56-61-38" class="footer__item-href"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm) <br />
+                  Tel (hotline) Sunday:
+                  <a href="52-56-61-38" class="footer__item-href"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -620,7 +636,9 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="cherly.lawson@example.com" class="footer__item-href"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
