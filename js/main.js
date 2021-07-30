@@ -63,16 +63,15 @@ $(document).ready(function () {
     $(this).validate({
       messages: {
         name: {
-          required: "Пожалуйста, укажите своё имя",
-          minlength: "Имя должно быть не короче 2 букв",
+          required: "Please enter your name",
+          minlength: "Name must be at least 2 letters long",
         },
         email: {
-          required: "Email адрес обязателен",
-          email:
-            "Ваш email адрес должен быть написан в формате name@domain.com",
+          required: "Email address is required",
+          email: "Your email address must be in the format name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
+          required: "Phone is required",
         },
       },
     });

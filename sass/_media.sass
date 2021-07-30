@@ -106,7 +106,7 @@
         top: 0
         right: 0
         z-index: 99
-    &__user, &__search
+    &__user, &__search,
       &--mobile
         &_hidden
           display: none
@@ -151,8 +151,9 @@
         height: 1px
         background-color: $text-color
   .user
-    &__name
+    &-name
       &--light
+        font-size: 14px
         color: $light
         margin-left: 0
         margin-top: 10px
@@ -248,7 +249,7 @@
       height: 250px
       margin-bottom: 20px
   .newsletter
-    padding: 78px 0 83px 0 
+    padding: 32px 0 83px 0 
     &__title
       margin-bottom: 37px   
   .subscribe 
