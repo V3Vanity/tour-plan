@@ -186,7 +186,11 @@
   .map
     width: 100%
   .newsletter
+    padding-top: 60px
+    &-title
+      margin-bottom: 10px
     &-wrapper 
+      justify-content: space-between
       max-width: 576px
       width: 92%
       flex-direction: column 
@@ -309,7 +313,56 @@
       position: absolute
       top: 98%
       left: 0
-@media (max-height: 576px)
+@media (max-width: 320px)
+  .container 
+    max-width: 278px
+  .navbar
+    &-top
+      height: 70px
+  .hotel 
+    padding-top: 0
+    padding-bottom: 40px
+    &-right
+      min-height: 403px
+    &-info
+      padding-bottom: 18px
+    &-slider
+      height: 179px
+  .booking
+    height: 210px
+    &__button
+      height: 45px
+      padding: 13px 
+      font-size: 14px
+  .map
+    height: 173px
+  .newsletter
+    height: 319px
+  .reviews
+    &__title
+      font-size: 18px
+      margin-top: 0
+      margin-bottom: 42px
+    &-slider
+      &__button
+        &--prev
+          margin-left: -95px
+        &--next
+          margin-right: -95px
+  .activities
+    padding-top: 0
+    &__title
+      margin-top: 40px
 
+
+@media (max-height: 420px)
+  .navbar
+    &-menu
+      padding-top: 10px
+      height: 300px
+@media (max-height: 320px)
+  .navbar
+    &-menu
+      height: 200px
 
   
