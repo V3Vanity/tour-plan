@@ -353,13 +353,81 @@
     padding-top: 0
     &__title
       margin-top: 40px
-
-
+  .footer
+    &-wrapper 
+      grid-template-columns: 1fr
+      padding-bottom: 60px
+    &__logo 
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        flex-direction: column
+        align-items: start
+        grid-row: 2
+        grid-column: 1
+    &__title
+      &--inline
+        margin-bottom: 22px
+    &__additional 
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      display: flex
+      align-items: flex-start
+      grid-row: 3
+      grid-column: 1
+    &__disclaimer
+      &-text 
+        justify-content: start
+        margin-top: 57px
+        grid-row: 1
+        grid-column: 1 / 4
+      &-img
+        margin-top: 10px
+        grid-row: 2
+        grid-column: 1
+    &__contact
+      &-details
+        font-size: 14px
+        grid-row: 6
+        grid-column: 1
+    &__contacts-form 
+      font-size: 14px
+      grid-row: 7
+      grid-column: 1
+    &__disclaimer
+      &-text 
+        grid-row: 1
+        grid-column: 1 / 5
+  .modal
+    &__form
+      width: 220px
+    &__dialog 
+      padding: 33px 33px
+      max-width: 320px
+    &__button
+      width: 100%
 @media (max-height: 420px)
   .navbar
     &-menu
       padding-top: 10px
       height: 300px
+  .modal
+    &__dialog 
+      padding: 22px 22px
+      min-height: 10px
+    &__form
+      height: 200px
+      overflow-y: scroll
+    &__button
+      min-width: 140px
+      min-height: 30px
+      font-size: 10px
+      padding: 0px
 @media (max-height: 320px)
   .navbar
     &-menu
