@@ -138,6 +138,7 @@
             display: block
   .menu
     &-button 
+      position: relative
       display: flex
       width: 16px
       height: 11px
@@ -146,10 +147,27 @@
       flex-direction: column
       border: none
       cursor: pointer
-      &__line 
+      &__line
         width: 16px
         height: 1px
         background-color: $text-color
+    &-button.activeties
+      display: block
+      margin-right: 7px
+      margin-top: 7px
+      background: #fff
+      
+  .menu-button__line-top.activeties
+    position: absolute
+    width: 16px
+    transform: rotate(45deg)
+  .menu-button__line-center.activeties 
+    transform: scale(0)
+  .menu-button__line-bottom.activeties 
+    position: absolute
+    width: 16px
+    transform: rotate(-45deg)  
+
   .user
     &-name
       &--light

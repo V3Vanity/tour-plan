@@ -85,11 +85,22 @@ $(document).ready(function () {
   //     },
   //   },
   // });
+
+  // Маска телефона
   $(document).ready(function () {
-    $("#phone").mask("+7 (999) 999-99-99");
+    $("#phone").mask("+7 (000) 000-00-00");
   });
   $(document).ready(function () {
-    $("#phone-2").mask("+7 (999) 999-99-99");
+    $("#phone-2").mask("+7 (000) 000-00-00");
+  });
+
+  // Настрйока бургера
+  $(document).ready(function () {
+    $(".menu-button").click(function (event) {
+      $(
+        ".menu-button,.menu-button__line-top,.menu-button__line-center,.menu-button__line-bottom"
+      ).toggleClass("activeties");
+    });
   });
   AOS.init();
 });
