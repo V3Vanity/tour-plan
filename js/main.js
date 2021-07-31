@@ -80,6 +80,9 @@ $(document).ready(function () {
   $.validator.methods.email = function (value, element) {
     return this.optional(element) || /[a-z]+@[a-z]+\.[a-z]+/.test(value);
   };
+  $("body").on("input", ".input-name", function () {
+    this.value = this.value.replace(/[^a-zа-яё\s]/gi, "");
+  });
 
   // $(".subscribe").validate({
   //   errorClass: "invalid",
